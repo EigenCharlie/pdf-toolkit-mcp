@@ -1,0 +1,40 @@
+{
+  "name": "pdf-toolkit",
+  "owner": {
+    "name": "EigenCharlie",
+    "email": "cavr94@gmail.com",
+    "url": "https://github.com/EigenCharlie"
+  },
+  "metadata": {
+    "description": "Unofficial PDF operations marketplace — exposes the pdf-toolkit Claude Code plugin (18 PDF tools via iLoveAPI).",
+    "version": "0.1.1"
+  },
+  "plugins": [
+    {
+      "name": "pdf-toolkit",
+      "source": ".",
+      "description": "18 PDF operations (merge, split, compress, OCR, convert, watermark, protect, and more) exposed as MCP tools via iLoveAPI. Ships with a `pdf-workflow` skill describing 5 canonical multi-step recipes.",
+      "version": "0.1.1",
+      "author": {
+        "name": "Carlos",
+        "email": "cavr94@gmail.com"
+      },
+      "homepage": "https://github.com/EigenCharlie/pdf-toolkit-mcp",
+      "repository": "https://github.com/EigenCharlie/pdf-toolkit-mcp",
+      "license": "MIT",
+      "category": "productivity",
+      "tags": [
+        "pdf",
+        "mcp",
+        "iloveapi",
+        "ocr",
+        "convert",
+        "merge",
+        "split",
+        "compress",
+        "watermark"
+      ],
+      "strict": false
+    }
+  ]
+}

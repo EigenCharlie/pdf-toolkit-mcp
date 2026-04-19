@@ -1,6 +1,7 @@
 {
   "name": "pdf-toolkit-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "mcpName": "io.github.eigencharlie/pdf-toolkit-mcp",
   "description": "Unofficial MCP server exposing PDF operations (merge, split, compress, OCR, convert, watermark, protect, and more) via the iLoveAPI REST API. Not affiliated with iLovePDF SL.",
   "type": "module",
   "main": "dist/index.js",
@@ -22,6 +23,8 @@
     "inspect": "npm run build && npx -y @modelcontextprotocol/inspector node dist/index.js",
     "lint": "eslint src tests",
     "typecheck": "tsc --noEmit",
+    "build:mcpb": "node scripts/build-mcpb.mjs",
+    "validate:mcpb": "mcpb validate manifest.json",
     "prepublishOnly": "npm run typecheck && npm run build && npm run test",
     "release:patch": "npm version patch && git push --follow-tags",
     "release:minor": "npm version minor && git push --follow-tags"
@@ -59,6 +62,7 @@
     "zod-to-json-schema": "^3.22.0"
   },
   "devDependencies": {
+    "@anthropic-ai/mcpb": "^2.1.2",
     "@types/node": "^20.11.0",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",

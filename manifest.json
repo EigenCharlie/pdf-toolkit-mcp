@@ -1,0 +1,104 @@
+{
+  "$schema": "https://raw.githubusercontent.com/anthropics/mcpb/main/schemas/mcpb-manifest-latest.schema.json",
+  "manifest_version": "0.3",
+  "name": "pdf-toolkit-mcp",
+  "display_name": "PDF Toolkit MCP",
+  "version": "0.1.1",
+  "description": "18 PDF operations (merge, split, compress, OCR, convert, watermark, protect, and more) exposed as MCP tools via the iLoveAPI REST service.",
+  "long_description": "Unofficial MCP server that wraps the iLoveAPI REST platform so agents (Claude Desktop, Claude Code, and any MCP-compatible client) can merge, split, compress, convert, OCR, watermark, rotate, protect, unlock, repair, extract pages from, and add page numbers to PDFs with a single structured tool call. Ships with a companion `pdf-workflow` skill describing five canonical multi-step recipes. Requires an iLoveAPI project key pair from https://developer.ilovepdf.com. Not affiliated with iLovePDF SL.",
+  "author": {
+    "name": "Carlos",
+    "email": "cavr94@gmail.com",
+    "url": "https://github.com/EigenCharlie"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EigenCharlie/pdf-toolkit-mcp"
+  },
+  "homepage": "https://github.com/EigenCharlie/pdf-toolkit-mcp#readme",
+  "documentation": "https://github.com/EigenCharlie/pdf-toolkit-mcp#readme",
+  "support": "https://github.com/EigenCharlie/pdf-toolkit-mcp/issues",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "pdf",
+    "claude",
+    "claude-code",
+    "iloveapi",
+    "pdf-toolkit",
+    "ai-tools"
+  ],
+  "server": {
+    "type": "node",
+    "entry_point": "dist/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/dist/index.js"
+      ],
+      "env": {
+        "ILOVEAPI_PROJECT_PUBLIC_KEY": "${user_config.ilove_public_key}",
+        "ILOVEAPI_PROJECT_SECRET_KEY": "${user_config.ilove_secret_key}",
+        "ILOVEAPI_SANDBOX_ROOT": "${user_config.sandbox_root}"
+      }
+    }
+  },
+  "user_config": {
+    "ilove_public_key": {
+      "type": "string",
+      "title": "iLoveAPI Project Public Key",
+      "description": "Project Public Key from https://developer.ilovepdf.com (starts with `project_public_`).",
+      "required": true,
+      "sensitive": true
+    },
+    "ilove_secret_key": {
+      "type": "string",
+      "title": "iLoveAPI Project Secret Key",
+      "description": "Project Secret Key from https://developer.ilovepdf.com. Used locally to sign short-lived JWTs; never sent anywhere except iLoveAPI.",
+      "required": true,
+      "sensitive": true
+    },
+    "sandbox_root": {
+      "type": "directory",
+      "title": "Sandbox root (optional)",
+      "description": "If set, all input and output paths must live inside this directory. Leave blank to allow any path the process can read and write.",
+      "required": false
+    }
+  },
+  "tools": [
+    { "name": "merge_pdf", "description": "Merge two or more PDFs into a single PDF." },
+    { "name": "split_pdf", "description": "Split a PDF into ranges or fixed-size chunks." },
+    { "name": "compress_pdf", "description": "Compress a PDF with low/recommended/extreme profiles." },
+    { "name": "pdf_to_word", "description": "Convert a PDF to an editable .docx document." },
+    { "name": "pdf_to_excel", "description": "Convert a PDF's tables to an .xlsx workbook." },
+    { "name": "pdf_to_powerpoint", "description": "Convert a PDF to a .pptx presentation." },
+    { "name": "pdf_to_jpg", "description": "Rasterize a PDF's pages into JPG images." },
+    { "name": "office_to_pdf", "description": "Convert .docx/.xlsx/.pptx to PDF." },
+    { "name": "html_to_pdf", "description": "Render an HTML URL or fragment as a PDF." },
+    { "name": "image_to_pdf", "description": "Bundle one or more images into a single PDF." },
+    { "name": "rotate_pdf", "description": "Rotate all or selected pages by 90/180/270 degrees." },
+    { "name": "add_page_numbers", "description": "Stamp page numbers onto an existing PDF." },
+    { "name": "add_watermark", "description": "Apply a text or image watermark to a PDF." },
+    { "name": "unlock_pdf", "description": "Remove a known owner password from a PDF." },
+    { "name": "protect_pdf", "description": "Encrypt a PDF with a user password." },
+    { "name": "repair_pdf", "description": "Attempt to repair a corrupted PDF." },
+    { "name": "ocr_pdf", "description": "Run OCR over a scanned PDF to make it searchable." },
+    { "name": "extract_pdf_pages", "description": "Extract a subset of pages into a new PDF." }
+  ],
+  "prompts_generated": false,
+  "tools_generated": false,
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=18.0.0"
+    }
+  },
+  "privacy_policies": [
+    "https://www.iloveapi.com/privacy_and_cookies"
+  ]
+}

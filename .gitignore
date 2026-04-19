@@ -16,3 +16,7 @@ tests/fixtures/tmp/
 
 # Local Claude Code session state — not the plugin (.claude-plugin/) which IS tracked
 .claude/
+
+# MCPB packaging artifacts (bundle + staging dir). The .mcpb file is attached to GitHub Releases, not committed.
+.mcpb-stage/
+*.mcpb

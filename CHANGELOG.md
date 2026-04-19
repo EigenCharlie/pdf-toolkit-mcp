@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] — 2026-04-19
+
+### Added
+- `mcpName` field (`io.github.eigencharlie/pdf-toolkit-mcp`) in `package.json` for MCP Registry discovery.
+- `.claude-plugin/marketplace.json` so users can `/plugin marketplace add EigenCharlie/pdf-toolkit-mcp` → `/plugin install pdf-toolkit@pdf-toolkit`.
+- `manifest.json` (MCPB v0.3) for Claude Desktop one-click install via the `.mcpb` bundle attached to GitHub Releases.
+
+### Changed
+- No runtime behavior changes vs 0.1.0. Purely distribution metadata.
+
 ## [0.1.0] — 2026-04-18
 
 ### Added
@@ -17,5 +27,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Auth via env vars (`ILOVEAPI_PROJECT_PUBLIC_KEY`, `ILOVEAPI_PROJECT_SECRET_KEY`).
 - Optional sandbox root (`ILOVEAPI_SANDBOX_ROOT`) to restrict filesystem access.
 
-[Unreleased]: https://github.com/EigenCharlie/pdf-toolkit-mcp/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/EigenCharlie/pdf-toolkit-mcp/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/EigenCharlie/pdf-toolkit-mcp/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/EigenCharlie/pdf-toolkit-mcp/releases/tag/v0.1.0

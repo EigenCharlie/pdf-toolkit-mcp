@@ -436,7 +436,8 @@ Repo secret required: **`NPM_TOKEN`** (npm *automation* token).
 ## 🗺 Roadmap
 
 - [x] v0.1 — 18 PDF tools, stdio transport, plugin + skill, CI, npm publish
-- [ ] v0.2 — Submit to `anthropics/claude-plugins-official` marketplace, add to [Smithery](https://smithery.ai), package as `.dxt` for Claude Desktop one-click install
+- [x] v0.1.1 — MCPB bundle (`.mcpb`) for Claude Desktop, marketplace manifest, MCP Registry submission (`mcpName`)
+- [ ] v0.2 — Submit the Claude plugin to `anthropics/claude-plugins-official`, publish an image-tools companion pack
 - [ ] v0.3 — 8 image tools (resize, convert, compress, crop, rotate, watermark, upscale, remove background)
 - [ ] v0.4 — Signature tools (signing flows require paid tier — gated behind env flag)
 - [ ] v1.0 — Optional Streamable-HTTP transport for hosted/multi-user setups
