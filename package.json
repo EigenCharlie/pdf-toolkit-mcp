@@ -1,0 +1,70 @@
+{
+  "name": "pdf-toolkit-mcp",
+  "version": "0.1.0",
+  "description": "Unofficial MCP server exposing PDF operations (merge, split, compress, OCR, convert, watermark, protect, and more) via the iLoveAPI REST API. Not affiliated with iLovePDF SL.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "pdf-toolkit-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run tests/unit",
+    "test:watch": "vitest tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "inspect": "npm run build && npx -y @modelcontextprotocol/inspector node dist/index.js",
+    "lint": "eslint src tests",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run build && npm run test",
+    "release:patch": "npm version patch && git push --follow-tags",
+    "release:minor": "npm version minor && git push --follow-tags"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "pdf",
+    "claude",
+    "claude-code",
+    "iloveapi",
+    "pdf-toolkit",
+    "ai-tools"
+  ],
+  "author": {
+    "name": "Carlos",
+    "email": "cavr94@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cavr94/pdf-toolkit-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cavr94/pdf-toolkit-mcp/issues"
+  },
+  "homepage": "https://github.com/cavr94/pdf-toolkit-mcp#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@ilovepdf/ilovepdf-nodejs": "^0.3.1",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.0",
+    "zod-to-json-schema": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}

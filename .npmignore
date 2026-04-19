@@ -1,0 +1,15 @@
+src/
+tests/
+.github/
+.claude-plugin/
+skills/
+scripts/
+*.config.ts
+*.config.cjs
+.eslintrc.cjs
+.gitignore
+tsconfig.json
+vitest.config.ts
+coverage/
+*.tsbuildinfo
+.env*

@@ -1,0 +1,18 @@
+node_modules/
+dist/
+coverage/
+*.log
+npm-debug.log*
+.env
+.env.local
+.env.*.local
+.DS_Store
+Thumbs.db
+tests/fixtures/output/
+tests/fixtures/tmp/
+.vscode/
+.idea/
+*.tsbuildinfo
+
+# Local Claude Code session state — not the plugin (.claude-plugin/) which IS tracked
+.claude/

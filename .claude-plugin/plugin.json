@@ -1,0 +1,14 @@
+{
+  "name": "pdf-toolkit",
+  "version": "0.1.0",
+  "description": "PDF operations (merge, split, compress, OCR, convert, watermark, protect, and more) via iLoveAPI. Unofficial, community-built.",
+  "author": {
+    "name": "Carlos",
+    "email": "cavr94@gmail.com"
+  },
+  "homepage": "https://github.com/cavr94/pdf-toolkit-mcp",
+  "license": "MIT",
+  "keywords": ["pdf", "mcp", "iloveapi", "claude-code"],
+  "mcpServers": ".claude-plugin/.mcp.json",
+  "skills": ["skills/pdf-workflow"]
+}

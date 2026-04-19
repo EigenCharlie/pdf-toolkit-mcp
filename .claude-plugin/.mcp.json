@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "pdf-toolkit": {
+      "command": "npx",
+      "args": ["-y", "pdf-toolkit-mcp"],
+      "env": {
+        "ILOVEAPI_PROJECT_PUBLIC_KEY": "${ILOVEAPI_PROJECT_PUBLIC_KEY}",
+        "ILOVEAPI_PROJECT_SECRET_KEY": "${ILOVEAPI_PROJECT_SECRET_KEY}"
+      }
+    }
+  }
+}
