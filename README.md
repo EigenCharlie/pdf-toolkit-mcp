@@ -11,7 +11,7 @@
 [![TypeScript](https://img.shields.io/badge/typescript-strict-3178c6.svg?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![MCP](https://img.shields.io/badge/MCP-1.x-000000.svg?style=flat-square)](https://modelcontextprotocol.io)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-plugin%20ready-7c3aed.svg?style=flat-square)](https://docs.claude.com/claude-code)
-[![CI](https://img.shields.io/github/actions/workflow/status/cavr94/pdf-toolkit-mcp/ci.yml?style=flat-square&label=CI)](https://github.com/cavr94/pdf-toolkit-mcp/actions)
+[![CI](https://img.shields.io/github/actions/workflow/status/EigenCharlie/pdf-toolkit-mcp/ci.yml?style=flat-square&label=CI)](https://github.com/EigenCharlie/pdf-toolkit-mcp/actions)
 
 [Install](#-install) · [Tools](#-tool-catalog) · [Recipes](#-workflow-recipes) · [Architecture](#-architecture) · [Security](#-security-model) · [FAQ](#-faq)
 
@@ -103,8 +103,8 @@ Restart Claude Code and all 18 tools appear in the picker. Verify with `/mcp` �
 ### Option B — Claude Code Plugin (includes the `pdf-workflow` skill)
 
 ```
-/plugin marketplace add cavr94/pdf-toolkit-mcp
-/plugin install pdf-toolkit@cavr94/pdf-toolkit-mcp
+/plugin marketplace add EigenCharlie/pdf-toolkit-mcp
+/plugin install pdf-toolkit@EigenCharlie/pdf-toolkit-mcp
 ```
 
 The plugin auto-configures the MCP server *and* installs a skill that teaches Claude five canonical multi-step PDF pipelines (see [Workflow recipes](#-workflow-recipes)).
@@ -375,7 +375,7 @@ Every failure surfaces a `PdfToolkitError` with a stable machine-readable code:
 ## 👩‍💻 Development
 
 ```bash
-git clone https://github.com/cavr94/pdf-toolkit-mcp.git
+git clone https://github.com/EigenCharlie/pdf-toolkit-mcp.git
 cd pdf-toolkit-mcp
 npm install
 ```
@@ -441,7 +441,7 @@ Repo secret required: **`NPM_TOKEN`** (npm *automation* token).
 - [ ] v0.4 — Signature tools (signing flows require paid tier — gated behind env flag)
 - [ ] v1.0 — Optional Streamable-HTTP transport for hosted/multi-user setups
 
-Have a feature request? [Open an issue](https://github.com/cavr94/pdf-toolkit-mcp/issues/new).
+Have a feature request? [Open an issue](https://github.com/EigenCharlie/pdf-toolkit-mcp/issues/new).
 
 ---
 

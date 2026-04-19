@@ -17,5 +17,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Auth via env vars (`ILOVEAPI_PROJECT_PUBLIC_KEY`, `ILOVEAPI_PROJECT_SECRET_KEY`).
 - Optional sandbox root (`ILOVEAPI_SANDBOX_ROOT`) to restrict filesystem access.
 
-[Unreleased]: https://github.com/cavr94/pdf-toolkit-mcp/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/cavr94/pdf-toolkit-mcp/releases/tag/v0.1.0
+[Unreleased]: https://github.com/EigenCharlie/pdf-toolkit-mcp/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/EigenCharlie/pdf-toolkit-mcp/releases/tag/v0.1.0

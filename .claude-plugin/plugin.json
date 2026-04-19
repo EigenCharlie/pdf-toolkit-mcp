@@ -6,7 +6,7 @@
     "name": "Carlos",
     "email": "cavr94@gmail.com"
   },
-  "homepage": "https://github.com/cavr94/pdf-toolkit-mcp",
+  "homepage": "https://github.com/EigenCharlie/pdf-toolkit-mcp",
   "license": "MIT",
   "keywords": ["pdf", "mcp", "iloveapi", "claude-code"],
   "mcpServers": ".claude-plugin/.mcp.json",
