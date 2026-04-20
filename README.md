@@ -142,6 +142,16 @@ ILOVEAPI_PROJECT_PUBLIC_KEY=… ILOVEAPI_PROJECT_SECRET_KEY=… npx -y pdf-toolk
 
 The server speaks the standard MCP JSON-RPC 2.0 framing over stdio. Wire it into Cursor, Windsurf, `mcphub`, `mcp-inspector`, or anything else that speaks MCP.
 
+### Option E — Claude Desktop `.mcpb` bundle (drag-and-drop)
+
+Grab `pdf-toolkit-mcp-<version>.mcpb` from the [latest GitHub Release](https://github.com/EigenCharlie/pdf-toolkit-mcp/releases/latest) and drag it into Claude Desktop → **Settings → Extensions**. Claude will prompt for your iLoveAPI keys via the `user_config` section of the bundled manifest. No `npx`, no Node, no terminal.
+
+> Bundles ship unsigned (no publisher certificate yet). macOS Gatekeeper / Windows SmartScreen may warn on first install; verify the SHA-256 in the release notes before accepting.
+
+### Option F — MCP Registry (auto-discovered by compatible clients)
+
+The server is indexed on the [official MCP Registry](https://registry.modelcontextprotocol.io) under `io.github.EigenCharlie/pdf-toolkit-mcp`. Clients that browse the registry (Claude Desktop extension pane, VS Code MCP picker, `mcphub`, etc.) can install it without any manual config — they'll point at the npm package and prompt for the two iLoveAPI env vars automatically.
+
 ---
 
 ## 🧰 Tool catalog

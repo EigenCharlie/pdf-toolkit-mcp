@@ -3,7 +3,7 @@
   "manifest_version": "0.3",
   "name": "pdf-toolkit-mcp",
   "display_name": "PDF Toolkit MCP",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "18 PDF operations (merge, split, compress, OCR, convert, watermark, protect, and more) exposed as MCP tools via the iLoveAPI REST service.",
   "long_description": "Unofficial MCP server that wraps the iLoveAPI REST platform so agents (Claude Desktop, Claude Code, and any MCP-compatible client) can merge, split, compress, convert, OCR, watermark, rotate, protect, unlock, repair, extract pages from, and add page numbers to PDFs with a single structured tool call. Ships with a companion `pdf-workflow` skill describing five canonical multi-step recipes. Requires an iLoveAPI project key pair from https://developer.ilovepdf.com. Not affiliated with iLovePDF SL.",
   "author": {

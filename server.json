@@ -1,0 +1,45 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.EigenCharlie/pdf-toolkit-mcp",
+  "description": "Unofficial PDF toolkit (merge/split/compress/OCR/convert/watermark/protect/...) via iLoveAPI.",
+  "repository": {
+    "url": "https://github.com/EigenCharlie/pdf-toolkit-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/EigenCharlie/pdf-toolkit-mcp#readme",
+  "version": "0.1.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "pdf-toolkit-mcp",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "ILOVEAPI_PROJECT_PUBLIC_KEY",
+          "description": "iLoveAPI Project Public Key (from https://developer.ilovepdf.com).",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "ILOVEAPI_PROJECT_SECRET_KEY",
+          "description": "iLoveAPI Project Secret Key. Used locally to sign short-lived JWTs.",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "ILOVEAPI_SANDBOX_ROOT",
+          "description": "Optional filesystem sandbox: if set, all I/O must stay inside this directory.",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] — 2026-04-20
+
+### Fixed
+- `mcpName` namespace is now `io.github.EigenCharlie/pdf-toolkit-mcp` (matching the actual GitHub username casing) so the MCP Registry's authorization check passes. The `eigencharlie` lowercase form in 0.1.1 was rejected with HTTP 403.
+
 ## [0.1.1] — 2026-04-19
 
 ### Added
@@ -27,6 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Auth via env vars (`ILOVEAPI_PROJECT_PUBLIC_KEY`, `ILOVEAPI_PROJECT_SECRET_KEY`).
 - Optional sandbox root (`ILOVEAPI_SANDBOX_ROOT`) to restrict filesystem access.
 
-[Unreleased]: https://github.com/EigenCharlie/pdf-toolkit-mcp/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/EigenCharlie/pdf-toolkit-mcp/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/EigenCharlie/pdf-toolkit-mcp/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/EigenCharlie/pdf-toolkit-mcp/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/EigenCharlie/pdf-toolkit-mcp/releases/tag/v0.1.0

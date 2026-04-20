@@ -1,7 +1,7 @@
 {
   "name": "pdf-toolkit-mcp",
-  "version": "0.1.1",
-  "mcpName": "io.github.eigencharlie/pdf-toolkit-mcp",
+  "version": "0.1.2",
+  "mcpName": "io.github.EigenCharlie/pdf-toolkit-mcp",
   "description": "Unofficial MCP server exposing PDF operations (merge, split, compress, OCR, convert, watermark, protect, and more) via the iLoveAPI REST API. Not affiliated with iLovePDF SL.",
   "type": "module",
   "main": "dist/index.js",

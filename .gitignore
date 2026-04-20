@@ -20,3 +20,6 @@ tests/fixtures/tmp/
 # MCPB packaging artifacts (bundle + staging dir). The .mcpb file is attached to GitHub Releases, not committed.
 .mcpb-stage/
 *.mcpb
+
+# Local tool binaries (mcp-publisher etc.). Devs should download fresh from upstream releases.
+.bin/
